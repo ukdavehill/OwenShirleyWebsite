@@ -6,6 +6,7 @@
 @import 'about.scss';
 @import 'music.scss';
 @import 'contact.scss';
+@import 'footer.scss';
 
 
 // $drop-down-color: #DAFB55;
@@ -40,6 +41,7 @@
   
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 a:link {
   color: #42b0f4;
@@ -64,7 +66,7 @@ a:active {
   // VIDEO AREA HERE
 
      
-// $videos: 24;
+$videos: 24;
 @mixin v-x {
   @for $i from 1 through $videos {
     .v-#{$i} {
@@ -73,7 +75,7 @@ a:active {
   }
 };
 
-@include v-x;
+// @include v-x;
 .item {
   .text:hover {
     // font-weight: bold;
@@ -146,15 +148,15 @@ a:active {
 // 2 columns video grid
 @media screen and (min-width: 901px) { 
   .item {
-    grid-template-rows:$dropdown-height-lg auto;
+    grid-template-rows:$dropdown-height-md auto;
 
     .text .icon {
-        top: -9px;
+        top: -6px;
     }
   }
 
   .item1 {
-    min-height: 184.78px + $dropdown-height-lg;
+    min-height: 184.78px + $dropdown-height-md;
     // min-height: 250.73px;
   }
   .grid, #about, #music, #contact {
@@ -200,7 +202,7 @@ a:active {
         grid-auto-rows: auto;
         // grid-template-rows: calc((0.5625*(100vw -$menu-width -34 -2) /2));
         // grid-gap: $grid-border-width;
-        grid-gap: 0px $grid-border-width;
+        grid-gap: 0px $grid-border-width-md;
   }
   .main-container .side-bar {
     display: grid; 
@@ -214,11 +216,21 @@ a:active {
 
 @media screen and (min-width: 1024px) {
   .item1 {
-    min-height: 219.38px + $dropdown-height-lg;
+    min-height: 224.16px + $dropdown-height-md;
   }
 }
 
+
+// 3 COLUMNS GRID
 @media screen and (min-width: 1201px)  {    
+  .item {
+    grid-template-rows:$dropdown-height-lg auto;
+
+    .text .icon {
+        top: -9px;
+    }
+  }
+  
   #page-message {
 
     h3 {
@@ -253,7 +265,8 @@ a:active {
                     "v-24 . .";
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
-        // grid-gap: $grid-border-width;
+        // grid-gap: 0px $grid-border-width-lg;
+        grid-gap: 0px $grid-border-width-lg;
   }
   
 }
@@ -304,102 +317,5 @@ a:active {
 // }
 
 // @include keepSize
-
-
-footer {
-  width: 85%;
-  // margin: 0;
-  padding-top: 30px;
-  border-top: 2px solid $grey;
-  height: auto;
-  display: flex;
-  // justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-  margin-bottom: 5px; //5px
-  // flex: 1; 
-  img {
-    // flex: 0 1 75%;
-    // height 600px;
-    width: 40%;
-    min-width: 150px;
-    max-width: 220px;
-} 
-} 
-  .footer-icons {
-    width: 40%;
-    display: flex;
-    // flex-direction: column;
-    justify-content: flex-end;
-
-    a {
-      display: block;
-    }
-
-    .fa-linkedin {
-      color:#0077b5;
-    }
-
-    .fa-twitter {
-      color:#1DA1F2;
-    }
-
-    .fa-facebook {
-      color:#3b5998 ;
-    }
-
-    .fa-imdb {
-      color:#f5de50;
-    }
-
-    
-  i {
-    
-    // display: block;
-    // padding: 5px;
-    font-size: 16px;
-    // opacity: 0.6;
-    transition: 0.4s;
-    // color: black; 
-    padding-left: 11px;           
-    
-    &:hover {
-      color: $grey;
-      opacity: 1;
-      transition: 0.4s;
-      cursor: pointer;
-    }
-    
-  } 
-  
-}
-
-
-
-@media screen and (min-width: 425px) {
-  .footer-icons i {
-      font-size: 18px;
-      padding-left: 13px;
-  }  
-
-  footer img {
-    min-width: 175px;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  footer {
-      width: 75%;
-  }  
-  footer img {
-    min-width: 220px;
-  }
-
-  .footer-icons i {
-    font-size: 19px;
-    padding-left: 15px;
-}  
-
-}
 
 
