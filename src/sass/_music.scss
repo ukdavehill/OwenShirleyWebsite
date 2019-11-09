@@ -1,5 +1,4 @@
 #music {
-    
     display: flex;
     background-color: $primary-color;
     // background-color: black;
@@ -7,21 +6,28 @@
     justify-content: center;
     height: 100vh;
     overflow-y: auto;
+
+    // main {
+    //     display: flex;
+    //     justify-content: center;
+    //     flex-flow: row wrap;
+
+    // }
     // margin-left: $menu-width + 17px;
-    .signature {
-        margin: 10px 0;
-        // width: 75%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        // flex: 1; 
-        img {
-            // flex: 0 1 75%;
-            // height 600px;
-            width: 70%;
-            min-width: 200px;
-        } 
-    }
+    // .signature {
+    //     margin: 10px 0;
+    //     // width: 75%;
+    //     height: auto;
+    //     display: flex;
+    //     justify-content: center;
+    //     // flex: 1; 
+    //     img {
+    //         // flex: 0 1 75%;
+    //         // height 600px;
+    //         width: 70%;
+    //         min-width: 200px;
+    //     } 
+    // }
 
     section {
         display: flex;
@@ -51,11 +57,11 @@
     }
 }
 
-@media screen and (min-width: 500px) {
-    #music .signature img {
-        width: 100%;
-    }
-}
+// @media screen and (min-width: 500px) {
+//     #music .signature img {
+//         width: 100%;
+//     }
+// }
 
 @media screen and (min-width: 650px) {
     #music section {

@@ -59,8 +59,12 @@ a:active {
   color: black;
 } 
 
-  
-  
+main {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
   // SIDE NAV HERE
       
   // VIDEO AREA HERE
@@ -159,7 +163,7 @@ $videos: 24;
     min-height: 184.78px + $dropdown-height-md;
     // min-height: 250.73px;
   }
-  .grid, #about, #music, #contact {
+  #portfolio, #about, #music, #contact{
         
         margin-left: $menu-width + 7px; //17px is scroll width
   }
@@ -204,7 +208,7 @@ $videos: 24;
         // grid-gap: $grid-border-width;
         grid-gap: 0px $grid-border-width-md;
   }
-  .main-container .side-bar {
+  .side-bar {
     display: grid; 
   }
 
