@@ -59,6 +59,12 @@ a:active {
   color: black;
 } 
 
+#portfolio{
+  display: flex;
+  flex-direction: column;
+  // justify-content: flex-end;   
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -70,7 +76,7 @@ main {
   // VIDEO AREA HERE
 
      
-$videos: 24;
+
 @mixin v-x {
   @for $i from 1 through $videos {
     .v-#{$i} {
@@ -85,7 +91,7 @@ $videos: 24;
     // font-weight: bold;
     cursor: pointer;
     // background-color: $grey;
-    transition: background-color 0.6s;
+    // transition: background-color 0.6s;
 }
   .text1:hover {
     // font-weight: bold;
