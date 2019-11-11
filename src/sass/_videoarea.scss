@@ -26,15 +26,15 @@ span.invisible {
                 "v-13"
                 "v-14"
                 "v-15" 
-                "v-16"
-                "v-17"
-                "v-18" 
-                "v-19"
-                "v-20"
-                "v-21"
-                "v-22"
-                "v-23" 
-                "v-24";
+                "v-16";
+                // "v-17"
+                // "v-18" 
+                // "v-19"
+                // "v-20"
+                // "v-21"
+                // "v-22"
+                // "v-23" 
+                // "v-24";
     grid-template-columns: 100%;
     grid-auto-rows: auto;
     
@@ -71,6 +71,9 @@ span.invisible {
           top: -1px;
           
         }
+
+        
+
         
         //ASK OWEN ABOUT THIS
         .icon:hover i{
@@ -207,7 +210,7 @@ span.invisible {
     }
   }
   
-  #cropped-vid1 {
+  #cropped-vid1, #cropped-vid10 {
     // background: #9aa6ea;
     background: black;
   }
@@ -217,10 +220,10 @@ span.invisible {
     background: white;
   }
   
-  #cropped-vid10 {
-    // background: #3FBF3F;
-    background: black;
-  }
+  // #cropped-vid10 {
+  //   // background: #3FBF3F;
+  //   background: black;
+  // }
 
    
   // //'VIDEO NOT AVAILABLE' image to replace iframe image
