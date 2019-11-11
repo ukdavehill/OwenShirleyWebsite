@@ -23,7 +23,6 @@ footer {
 .footer-icons {
   width: 40%;
   display: flex;
-  // flex-direction: column;
   justify-content: center;
 
   a {
@@ -45,29 +44,20 @@ footer {
 }
 
 @media screen and (min-width: 425px) {
-.footer-icons i {
-    font-size: 18px;
-}  
-
-footer img {
-  min-width: 175px;
-}
+  
+  footer img {
+    min-width: 175px;
+  }
 }
 
 @media screen and (min-width: 650px) {
-footer {
-    width: 75%;
-} 
+  footer {
+      width: 75%;
+  } 
 
-footer img {
-  min-width: 220px;
-}
-
-.footer-icons i {
-  font-size: 19px;
-  padding-left: 15px;
-}  
-
+  footer img {
+    width: 220px;
+  }
 }
   
   
