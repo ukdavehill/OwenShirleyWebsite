@@ -224,7 +224,7 @@
     // ===============END-VIDEO LIST====================
 
     const videoArea = document.querySelector(".video-area");
-    const pageMessage = document.getElementById('page-message');
+    // const pageMessage = document.getElementById('page-message');
 
     function populateVideos(videoList) {
         var html = videoList

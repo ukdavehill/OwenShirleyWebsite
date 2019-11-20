@@ -108,42 +108,49 @@ main {
 @media screen and (min-width: 360px){
   .item1 {
     min-height: 202.5px + $dropdown-height-sm;
+    max-height: 210.94px + $dropdown-height-sm;
   }
 }
 
 @media screen and (min-width: 375px){
   .item1 {
     min-height: 210.94px + $dropdown-height-sm;
+    max-height: 233.44px + $dropdown-height-sm;
   }
 }
 
 @media screen and (min-width: 414px){
   .item1 {
     min-height: 233.44px + $dropdown-height-sm;
+    max-height: 239.06px + $dropdown-height-sm;
   }
 }
 
 @media screen and (min-width: 425px){
   .item1 {
     min-height: 239.06px + $dropdown-height-sm;
+    max-height: 270px + $dropdown-height-sm;
   }
 }
 
 @media screen and (min-width: 480px){
   .item1 {
     min-height: 270px + $dropdown-height-sm;
+    max-height: 337.5px + $dropdown-height-sm;
   }
 }
 
 @media screen and (min-width: 600px){
   .item1 {
     min-height: 337.5px + $dropdown-height-sm;
+    max-height: 432px + $dropdown-height-sm;
   }
 }
 
 @media screen and (min-width: 768px){
   .item1 {
     min-height: 432px + $dropdown-height-sm;
+    max-height: 450px + $dropdown-height-sm;
   }
 }
 
@@ -171,7 +178,7 @@ main {
   }
 
   .item1 {
-    min-height: 184.78px + $dropdown-height-md;
+    min-height: 181.69px + $dropdown-height-md;
     // min-height: 250.73px;
   }
   #portfolio, #about, #music, #contact{
@@ -231,7 +238,15 @@ main {
 
 @media screen and (min-width: 1024px) {
   .item1 {
-    min-height: 224.16px + $dropdown-height-md;
+    min-height: 216.28px + $dropdown-height-md;
+    max-height: 241.03px + $dropdown-height-md;
+  }
+}
+
+@media screen and (min-width: 1112px) {
+  .item1 {
+    min-height: 241.03px + $dropdown-height-md;
+    max-height: 265.78px + $dropdown-height-md;
   }
 }
 
@@ -270,7 +285,8 @@ main {
   
   
   .item1 {
-    min-height: 176.8px + $dropdown-height-lg;
+    min-height: 174.73px + $dropdown-height-lg;
+    max-height: 189.56px + $dropdown-height-lg;
   }
 
   .grid {
@@ -293,14 +309,16 @@ main {
 
 @media screen and (min-width: 1280px) {
   .item1 {
-    min-height: 191.61px + $dropdown-height-lg;
+    min-height: 189.56px + $dropdown-height-lg;
+    max-height: 202.5px + $dropdown-height-lg;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .item1 {
     // min-height: 207.73px + $dropdown-height-lg;
-    min-height: 205.11px + $dropdown-height-lg;
+    min-height: 202.5px + $dropdown-height-lg;
+    max-height: 219.55px + $dropdown-height-lg;
   }
 }
 
@@ -308,20 +326,24 @@ main {
 // min-height: calc((screenWidth - menuWidth - (3 * gridWidth) - scrollWidth)*0.5625 / 3) + dropDownWidth)px
 @media screen and (min-width: 1440px) {
   .item1 {
-    min-height: 221.63px + $dropdown-height-lg;
+    min-height: 219.55px + $dropdown-height-lg;
+    max-height: 249.55px + $dropdown-height-lg;
     
   }
 }
 
 @media screen and (min-width: 1600px) {
   .item1 {
-    min-height: 251.63px + $dropdown-height-lg;
+    min-height: 249.55px + $dropdown-height-lg;
+    max-height: 309.55px + $dropdown-height-lg;
   }
 }
 
+
 @media screen and (min-width: 1920px) {
   .item1 {
-    min-height: 311.63px + $dropdown-height-lg;
+    min-height: 309.55px + $dropdown-height-lg;
+    max-height: 399.55px + $dropdown-height-lg;
   }
 }
 
