@@ -6,7 +6,10 @@
         justify-content: center;
         // max-width: 600px;
         // overflow-x: none;
-        
+        main {
+            // height: 100vh;
+            // display: flex;  
+        }
         // margin-left: $menu-width + 17px;
         height: 100%;
         // main {
@@ -58,6 +61,7 @@
             align-items: center;
             margin-top: 20px;
             width: 85%;
+            
            
             img{
                 // height: 200px;
