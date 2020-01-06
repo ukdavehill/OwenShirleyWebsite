@@ -1,0 +1,19 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} owenshirley\.co\.uk [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://owenshirley.co.uk/$1 [R,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file in directory with .html extension
+
+RewriteCond %{REQUEST_FILENAME} \.html -f
+
+# Show the page that has the .html extension
+
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+
+
+

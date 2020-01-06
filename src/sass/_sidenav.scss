@@ -16,7 +16,7 @@
 
 
 .side-bar {
-    overflow-y: none;
+    overflow-y: auto;
     height: 100%;
     position: fixed;
     z-index: 1;
@@ -55,6 +55,7 @@
         align-content: center;
         display: flex;
         justify-content: center;
+        margin-bottom: 10px;
         
         ul {
           // border: 2px solid black;
@@ -74,6 +75,7 @@
           flex: 1;
           display: flex;
           align-items: center;
+          max-height: 70px;
           
           a {
             text-decoration: none;

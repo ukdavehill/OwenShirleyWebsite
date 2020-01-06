@@ -4,14 +4,15 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+        height: 100%;
         // max-width: 600px;
         // overflow-x: none;
         main {
-            // height: 100vh;
+            height: 100vh;
             // display: flex;  
         }
         // margin-left: $menu-width + 17px;
-        height: 100%;
+        
         // main {
         //     display: flex;
         //     justify-content: center;
